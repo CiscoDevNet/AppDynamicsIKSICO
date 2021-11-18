@@ -165,27 +165,28 @@ Open Orchestration-> UpdateIksVars->Add Global Variables Task:
 
 Add the following variables, the data will be as it applies to your own specific environment:
 
-appport - TBD(eg. 30080)
+appport - this is the application port that will be targetted by the load generator. For this use case, use 30080 since the nodePort for this App is provisioned as this
 
-nbrapm - TBD(eg. 8), this is the number of app agent needed for this application. We have 8 services and so will allocate 8 app agent
+nbrapm - this is the number of app agent needed for this application. We have 8 services and so allocate 8 app agents here
 
-nbrma - TBD(eg. 1), this is the number of machine agent licenses needed. For this use case, we have one clusteragent
+nbrma - this is the number of machine agent licenses needed. For this use case, we have one clusteragent here so allocate 1
 
-nbrsim - TBD(eg. 1), this license enables an add-on module to the machine agent that provides insights into the underlying infrastructure
+nbrsim - this license enables an add-on module to the machine agent that provides insights into the underlying infrastructure. For this use case, we have 1 clusteragent and so allocate 1 sim agent as well.
 
 nbrnet(eg. 0), this is the .NET licenses needed. For this use case,set as 0
 
-url - set to the url of the SAAS Controller (eg. https://devnet.saas.appdynamics.com)
+url - set to the url of the SAAS Controller. For this use case, we are leveraging the devnet SAAS controller and so set it to this: https://devnet.saas.appdynamics.com
 
 namespaces - these are the k8s namespaces to be monitored by the AppDynamics cluster agent. Leave it as default
 
 storename - your store name. eg. IKSChaiStore
 
-username	- eg. TBD, just enter a random str
+username - For this use case, just enter a random str
 
 dockeruser - your user name for containers.cisco.com
 
-Open Orchestration-> UpdateIksVars->Add Global Variables Sensitive Task:
+
+Next, Open Orchestration-> UpdateIksVars->Add Global Variables Sensitive Task:
 
 ![alt text](https://github.com/prathjan/images/blob/main/iksglobalvar3.png?raw=true)
 
@@ -195,7 +196,7 @@ password	- just enter a random str for now, not used for this use case
 
 dockerpass - your password for containers.cisco.com
 
-privatekey - base64 encoded private ssh key that you used when creatig your IKS cluster
+privatekey - base64 encoded private ssh key that you used when creating your IKS cluster
 
 ## Step 5: Setup Tfiks-Host Variables
 
