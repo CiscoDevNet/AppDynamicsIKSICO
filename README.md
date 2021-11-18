@@ -288,7 +288,7 @@ hostwsname - set this to the workspace of tfikshost, eg. Tfiks-Host
 
 globalwsname - set this to the global workspace, eg. Tfiks-Global
 
-## Step 11: Setup tfiksreTfiks-Remove move Variables
+## Step 11: Setup Tfiks-Remove Variables
 
 Open Orchestration-> UpdateLegacyVars->Add Tfiks-Remove Variables Task:
 
@@ -304,6 +304,8 @@ globalwsname - set this to the global workspace, eg. Tfiks-Global
 
 ## Step 10: Execute ICO Workflow for App Services Deployment and Instrumentation
 
+Open the AppdIksIco workflow and execute:
+
 ![alt text](https://github.com/prathjan/images/blob/main/exeiks.png?raw=true)
 
 You will be prompted for the following data:
@@ -317,6 +319,8 @@ Pick up the Agent Pool ID and token from your TFCB account
 ![alt text](https://github.com/prathjan/images/blob/main/tfcb2.png?raw=true)
 
 ## Step 11: Execute ICO Workflow for App Services Load Generation
+
+Open the OnlyLoad workflow and execute:
 
 ![alt text](https://github.com/prathjan/images/blob/main/exeiksload.png?raw=true)
 
@@ -338,26 +342,12 @@ Checkout the infrastructure insights in Intersight:
 
 ### Interfacing with AppDynamics Controller API for De-provisioning - Use RBAC script to remove AppDynamics User and license rule
 
-Execute the AppdRemove workspace to remove all the entities created in AppDynamics.
+Open the ICO workflow AppdIksWorkspaceDelete and execute to remove all the entities created in AppDynamics and TFCB:
 
-Due to a known error, you will have to manually delete the MasalaChaiStore application from AppDynamics to complete the cleanup:
+![alt text](https://github.com/prathjan/images/blob/main/iksdeswf.png?raw=true)
 
-![alt text](https://github.com/prathjan/images/blob/main/appd5.png?raw=true)
+Due to a known error, you will have to manually delete the IKSChaiStore application from AppDynamics to complete the cleanup:
+
+![alt text](https://github.com/prathjan/images/blob/main/iksdes.png?raw=true)
             
-### Undeploy applications and deprovision infrastructure
 
-ICO Workflows do not support deleting TFCB workspaces at this time. So, we will have to terminate and clean up leveraging TFCB.
-
-Destroy the TFCB workspaces in this order:
-
-AppdLoad
-
-AppdRemove
-
-AppdRbac
-
-AppdSaas
-
-AppdInfra
-
-AppdDb
