@@ -65,6 +65,10 @@ This use case addresses the fourth flow in the below diagram:
 
 6. You will need to have some minimal knowledge of Intersight ICO. Please review tutorials on Youtube as well as the following: https://intersight.com/help/saas/features/orchestration/configure#intersight_cloud_orchestrator
 
+7. You will follow this codeexchange to set up your IKS cluster: https://developer.cisco.com/codeexchange/github/repo/CiscoDevNet/intersight-tfb-iks. Note the TFCB workspace for the IKS cluster provisioning, you will need this to proceed with this use case.
+
+8. You will create an account on containers.cisco.com and save the username and password. This is to download the docker images from the repo.
+
 ### Intersight Target configuration for AppDynamics and on prem entities
 
 You will log into your Intersight account and create the following targets. Please refer to Intersight docs for details on how to create these Targets:
