@@ -103,15 +103,15 @@ https://github.com/CiscoDevNet/IcoTemplates.git
 
 Import the template ** ExportIksApp.json ** in Intersight:
 
-![alt text](https://github.com/prathjan/images/blob/main/importleg.png?raw=true)
+![alt text](https://github.com/prathjan/images/blob/main/importiksapp.png?raw=true)
 
 Review the worflows imported. The workflows leverage IST/TFCB Git repos referenced in Step 2 here: https://developer.cisco.com/codeexchange/github/repo/CiscoDevNet/AppDynamicsIKSIST
 
 ![alt text](https://github.com/prathjan/images/blob/main/summary4.png?raw=true)
 
-In short, the following workflows are the ones referenced in the main workflow:
+In short, the following workflows are the ones referenced in the above main workflow:
 
-AppdIksWorkspaces - Sets up the TFCB workspaces for:
+AppdIksWorkspace - Sets up the TFCB workspaces for:
 
     Tfiks-Global - Sets up the global vars for all the workspaces
 
@@ -129,7 +129,7 @@ AppdIksWorkspaces - Sets up the TFCB workspaces for:
 
     Tfiks-Remove - Removes all resources provisioned and removes the TFCB workspaces
 
-UpdateLIksVars - Updates the variables for the above TFCB workspaces
+UpdateIksVars - Updates the variables for the above TFCB workspaces
 
 InvokeIksBasePlans - Sets up the base cluster dependencies before app is installed
 
@@ -139,19 +139,19 @@ InvokeIksAppPlans - Installs the Apps with AppDynamics auto instrumentation
 
 Import the template ** ExportIksLoad.json ** in Intersight:
 
-![alt text](https://github.com/prathjan/images/blob/main/importload.png?raw=true)
+![alt text](https://github.com/prathjan/images/blob/main/importiksload.png?raw=true)
 
 Review the worflows imported:
 
 ![alt text](https://github.com/prathjan/images/blob/main/sumload.png?raw=true)
 
-This workflow runs the application load generator.
+The above workflow runs the application load generator.
 
 ## Step 3: Importing ICO template for App Services Decommissioning
 
 Import the template ** ExportIksDestroy.json ** in Intersight:
 
-![alt text](https://github.com/prathjan/images/blob/main/destroy.png?raw=true)
+![alt text](https://github.com/prathjan/images/blob/main/importiksdestroy.png?raw=true)
 
 Executing the imported workflow will delete resources created and also destroy the TFCB workspaces
 
