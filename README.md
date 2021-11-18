@@ -317,6 +317,18 @@ Pick up the Agent Pool ID and token from your TFCB account
 
 ![alt text](https://github.com/prathjan/images/blob/main/tfcb2.png?raw=true)
 
+View the application deployment status at:
+
+http://<master_node_ip>:30080/tools.descartes.teastore.webui/status
+
+![alt text](https://github.com/prathjan/images/blob/main/teastatus.png?raw=true)
+
+View the application at:
+
+http://<master_node_ip>:30080/tools.descartes.teastore.webui/
+
+![alt text](https://github.com/prathjan/images/blob/main/tea.png?raw=true)
+
 ## Step 11: Execute ICO Workflow for App Services Load Generation
 
 Open the OnlyLoad workflow and execute:
