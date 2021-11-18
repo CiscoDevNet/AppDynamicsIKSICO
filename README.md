@@ -342,7 +342,7 @@ Checkout the infrastructure insights in Intersight:
 
 ### Interfacing with AppDynamics Controller API for De-provisioning - Use RBAC script to remove AppDynamics User and license rule
 
-Open the ICO workflow AppdIksWorkspaceDelete and execute to remove all the entities created in AppDynamics and TFCB:
+Open the ICO workflow AppdIksWorkspaceDelete and execute to remove all the entities created in AppDynamics and TFCB. Select Organization, Target, CloudOrg, PoolID, Token as before and Execute: 
 
 ![alt text](https://github.com/prathjan/images/blob/main/iksdeswf.png?raw=true)
 
