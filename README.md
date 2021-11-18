@@ -61,7 +61,7 @@ This use case addresses the fourth flow in the below diagram:
 
 4. You will need access to a vSphere infrastructure with backend compute and storage provisioned
 
-5. You will also need an account in AppDynamics SAAS Controller and should have the API Client ID and Client Secret.
+5. You will also need an account in AppDynamics DevNet SAAS Controller (https://devnet.saas.appdynamics.com/) and should be able to log in and view your deployed Application insights.
 
 6. You will need to have some minimal knowledge of Intersight ICO. Please review tutorials on Youtube as well as the following: https://intersight.com/help/saas/features/orchestration/configure#intersight_cloud_orchestrator
 
