@@ -38,7 +38,6 @@
 
         Undeploy applications and deprovision infrastructure
 
-            Step 3: Importing ICO template for App Services Decommissioning
 
 
 ### Use Case
@@ -340,9 +339,9 @@ Checkout the infrastructure insights in Intersight:
 
 ![alt text](https://github.com/prathjan/images/blob/main/iksappd4.png?raw=true)
 
-### Interfacing with AppDynamics Controller API for De-provisioning - Use RBAC script to remove AppDynamics User and license rule
+### Undeploy applications and deprovision infrastructure
 
-Open the ICO workflow AppdIksWorkspaceDelete and execute to remove all the entities created in AppDynamics and TFCB. Select Organization, Target, CloudOrg, PoolID, Token as before and Execute: 
+Open the ICO workflow AppdIksWorkspaceDelete imported earlier in Step 3 above. Execute to remove all the entities created in AppDynamics and TFCB. Select Organization, Target, CloudOrg, PoolID, Token as before and Execute: 
 
 ![alt text](https://github.com/prathjan/images/blob/main/iksdeswf.png?raw=true)
 
